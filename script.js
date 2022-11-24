@@ -15,7 +15,7 @@ function getComputerChoice() {
    //console.log(compChoice);
 }
 
-getComputerChoice();
+//getComputerChoice();
 
 let userChoice = prompt("Please choose rock, paper, or scissors");
 
@@ -65,5 +65,17 @@ function rpsRound(userChoice, compChoice) {
     }
 }
 
-console.log(rpsRound(userChoice, compChoice))
 
+
+
+function rpsGame(){
+     for (let i = 0; i < 5; i++) {
+          userChoice = prompt("Please choose rock, paper, or scissors");
+          getComputerChoice();
+          console.log(rpsRound(userChoice, compChoice));
+          //rpsRound(userChoice, compChoice);
+          //return gameResult;
+     }
+}
+
+rpsGame();
